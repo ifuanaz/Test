@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* * {
+            font-weight: bold;
+            font-size: 28px;
+            color: yellow;
+        }
+
+        #test {
+            color: indigo;
+        }
+
+        li > .link {
+            color: orchid;
+        }
+
+        .link {
+            color: green;
+        }
+        
+        div > ul > li > a {
+            color: red;
+        } */
+
+        html,
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .btn-wrap {
+            padding: 50px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            vertical-align: middle;
+            padding: .5em 1em;
+            margin-right: .6rem;
+            color: #fff;
+            font-size: 1em;
+            line-height: 1.2;
+            text-decoration: none;
+            background-color: #e8921c;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 .33em rgba(0, 0, 0, .5);
+            cursor: pointer;
+        }
+
+        .btn-big {
+            font-size: 2.5em;
+        }
+
+        /* POSTS */
+        #title-big {
+            color: rgb(8 126 55);
+        }
+
+        .post-section {
+            width: 100%;
+            max-width: 500px;
+            font-size: 18px;
+            margin: 20px auto;
+            padding: 1rem;
+            background-color: #ededed;
+            border: 1px solid #ddd;
+        }
+
+        .title {
+            margin: 0 0 1rem;
+            padding: .25em 1rem;
+
+            font-size: 2em;
+            background-color: #67dee8;
+        }
+
+        .title-big {
+            font-size: 2.5em;
+        }
+
+        .title-small {
+            font-size: 1.5em;
+        } 
+
+        .text {
+            padding: 0 1em;
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+
+        .post-section > article > h2.title-big {
+            color: rgb(161, 7, 123);
+        }
+
+        .table {
+            width: 600px;
+            height: 200px;
+            margin: 30px auto;
+        }
+
+        .table td {
+            border: 1px solid #ccc;
+        }
+
+        .link2:link {
+            color: rgb(0, 255, 64);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="#" class="link2">Jus link</a>
+
+    <a href="https://www.google.com/">
+        Силка на сторінку
+    </a>
+
+    <table class="table">
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="1"></td>
+            <td></td>
+            <td></td>
+            <td rowspan="3" colspan="2"></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td rowspan="2" colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <table class="table">
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td rowspan="3" colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="3"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <ul type="disc">
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ul>
+            </td>
+            <td>
+                <ul type="circle">
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ul>
+            </td>
+            <td>
+                <ul type="square">
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ol type="a">
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ol>
+            </td>
+            <td>
+                <ol type="I">
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ol>
+            </td>
+            <td>
+                <ol start="5">
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ol>
+            </td>
+            <td>
+                <ol start="7" reversed>
+                    <li>Test 1</li>
+                    <li>Test 2</li>
+                    <li>Test 3</li>
+                    <li>Test 4</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <!-- <div>
+        <ul>
+            <li>
+                <a href="#" id="test" class="link">Test</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <div class="btn-wrap">
+        <button id="promp" class="btn">Button</button>
+        <button class="btn btn-big">Button</button>
+    </div>
+
+    <hr>
+
+    <section class="post-section">
+        <article>
+            <h2 id="title-big" class="title title-big">Title &reg;</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam earum ipsa nemo soluta, eius
+                eveniet perferendis dignissimos atque obcaecati libero in incidunt a fugit ullam ex consequatur modi!
+                Voluptate consectetur, nesciunt eaque id illum itaque sint porro optio quos quidem eveniet provident
+                praesentium dicta assumenda qui. Corrupti, at eum?
+            </p>
+        </article>
+        <article>
+            <h2 class="title">Title</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam earum ipsa nemo soluta, eius
+                eveniet perferendis dignissimos atque obcaecati libero in incidunt a fugit ullam ex consequatur modi!
+                Voluptate consectetur, nesciunt eaque id illum itaque sint porro optio quos quidem eveniet provident
+                praesentium dicta assumenda qui. Corrupti, at eum?
+            </p>
+        </article>
+        <article>
+            <h2 class="title">Title</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam earum ipsa nemo soluta, eius
+                eveniet perferendis dignissimos atque obcaecati libero in incidunt a fugit ullam ex consequatur modi!
+                Voluptate consectetur, nesciunt eaque id illum itaque sint porro optio quos quidem eveniet provident
+                praesentium dicta assumenda qui. Corrupti, at eum?
+            </p>
+        </article>
+        <article>
+            <h2 class="title title-small">Title</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veniam earum ipsa nemo soluta, eius
+                eveniet perferendis dignissimos atque obcaecati libero in incidunt a fugit ullam ex consequatur modi!
+                Voluptate consectetur, nesciunt eaque id illum itaque sint porro optio quos quidem eveniet provident
+                praesentium dicta assumenda qui. Corrupti, at eum?
+            </p>
+        </article>
+    </section>
+
+
+    <script>
+        const URL = 'https://jsonplaceholder.typicode.com/users';
+        // var xhr = new XMLHttpRequest();
+        // var body = null;
+
+        // xhr.open('GET', URL);
+        // xhr.responseType = 'json';
+        // xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+        // xhr.setRequestHeader('TOKEN', 'mytestoken');
+
+        // params = {
+        //     title: 'My new post 1',
+        //     body: 'some text here...',
+        //     userId: 2,
+        // }
+
+        // body = JSON.stringify(params);
+        
+        // xhr.onload = function() {
+        //     console.log(xhr.response);
+        // }
+
+        // xhr.send(body);
+
+    
+        // fetch(URL, {
+        //     method: 'GET',
+        //     headers: {
+        //         token: 'mytoken'
+        //     }
+        // })
+        //     .then(response => response.json())
+        //     .then(json => console.log('json: ', json));
+
+
+        function myFetch(url) {
+            return new Promise((resolve, reject) => {
+                fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        token: 'mytoken'
+                    }
+                })
+                    .then(response => response.json())
+                    .then(json => {
+                        setTimeout(() => {
+                            return resolve(json);
+                        }, Math.random() * 3000);
+                    })
+                    .catch(err => reject(err));
+            });
+        };
+
+        var myF = myFetch(URL);
+
+        myF.then(res => {
+            console.log('res: ', res);
+        });
+
+        // fetch(URL)
+        //     .then(response => response.json())
+        //     .then(json => console.log(json))
+
+        // fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+
+        var promp = document.getElementById('promp');
+
+        promp.addEventListener('click', () => {
+            var result = prompt('Please enter your login');
+            console.log(result);
+
+            if (result === null) {
+                console.log('Дію Скасовано');
+            } else if (result !== 'admin') {
+                console.log('Користувача з таким логіном не існує');
+            } else {
+                var password = prompt('Please enter your password');
+                console.log(password);
+
+                if (password === 'password') {
+                    console.log('Доступ дозволено');
+                } else if (password === null) {
+                    console.log('Дію Скасовано');
+                } else {
+                    console.log('Неправильний пароль');
+                }
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
